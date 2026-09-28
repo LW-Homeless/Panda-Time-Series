@@ -4,9 +4,8 @@ Aplicación de terminal (TUI) construida con [Textual](https://textual.textualiz
 
 Proyecto basado en el reto [Pandas Time Series](https://roadmap.sh/projects/pandas-time-series) de [roadmap.sh](https://roadmap.sh/), que busca aprender cómo Pandas maneja fechas y series de tiempo.
 
-<!-- TODO: agrega aquí una captura de pantalla de la app, por ejemplo:
-![Vista principal](docs/screenshot.png)
--->
+# Demo
+![Demo de la aplicación](https://github.com/LW-Homeless/Panda-Time-Series/blob/main/time-series.gif?raw=true)
 
 ## Sobre el reto de roadmap.sh
 
