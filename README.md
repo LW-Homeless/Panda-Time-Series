@@ -85,7 +85,7 @@ Los gráficos se muestran como imágenes mediante `textual-image`, que elige aut
 ## Instalación
 
 ```bash
-git clone <URL_DEL_REPOSITORIO>
+git clone https://github.com/LW-Homeless/Panda-Time-Series.git
 cd Time_Series
 
 python -m venv .venv
