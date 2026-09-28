@@ -105,7 +105,7 @@ pip install -r requirements.txt
 ## Uso
 
 ```bash
-python <archivo_de_entrada>.py
+python app.py
 ```
 
 <!-- TODO: reemplaza <archivo_de_entrada> por el archivo real (por ejemplo main.py). -->
