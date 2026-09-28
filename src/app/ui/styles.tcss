@@ -1,0 +1,56 @@
+/* Styles Header */
+
+Header {
+    height: 1;
+    color: $accent;
+}
+
+HeaderIcon {
+    display: none;
+}
+
+
+/* Styles CustomInfoPanel */
+
+CustomInfoPanel {
+    border: $accent;
+    height: 1fr;
+}
+
+CustomInfoPanel #panel-content {
+    height: 1fr;
+}
+
+CustomInfoPanel #panel-title {
+    height: auto;
+}
+
+CustomLoadingIndicator {
+    align: center middle;
+    color: rgb(97,65,122);
+    height: 1fr;
+}
+
+#panel-title {
+    color: $accent;
+    text-style: bold;
+}
+
+/* Styles CustomPanelChart */
+
+CustomPanelChart {
+    border: round rgb(120, 120, 120);
+}
+
+#charts-container {
+    grid-size: 2 3;
+    grid-columns: 1fr 1fr;
+    grid-gutter: 1 2;
+    padding: 1;
+    overflow-y: auto;
+}
+
+#left-panel {
+    border: round rgb(120, 120, 120);
+    width: 30%;
+}
