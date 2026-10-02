@@ -31,7 +31,7 @@ class CustomPanelChart(Vertical):
     def plot_data(self, data, title=""):
         self.remove_children()
 
-        etiquetas = data.index.strftime("%Y").tolist()
+        etiquetas = [fecha[:4] for fecha in data.index]
         rango = f"{etiquetas[0]} - {etiquetas[-1]}"
 
         buffer_imagen = self._generar_imagen_grafico(data, title=f"{title} ({rango})", etiquetas=etiquetas)

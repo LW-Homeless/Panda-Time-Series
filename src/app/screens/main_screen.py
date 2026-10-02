@@ -50,11 +50,11 @@ class MainScreen(Screen):
         # cargar los diferente indicadores en los paneles de informacion CustomInfoPanel
 
         self.__data = ProcessData().get_indicator()
-
-
+        self.__data.index = self.__data.index.strftime("%Y-%m-%d")
         self.load_data_panel_data(self.__data)
 
     def load_data_panel_data(self, data):
+
         self.query_one("#panel-data", CustomInfoPanel).show_widget(
             CustomDataTable(columns=["Fecha", "TOTAL VTAs. NSA"], rows=data["LTOTALNSA"].items())
         )
