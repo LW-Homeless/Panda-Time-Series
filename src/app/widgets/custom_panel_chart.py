@@ -34,12 +34,12 @@ class CustomPanelChart(Vertical):
         etiquetas = [fecha[:4] for fecha in data.index]
         rango = f"{etiquetas[0]} - {etiquetas[-1]}"
 
-        buffer_imagen = self._generar_imagen_grafico(data, title=f"{title} ({rango})", etiquetas=etiquetas)
+        buffer_imagen = self.__generate_imagen(data, title=f"{title} ({rango})", etiquetas=etiquetas)
 
         imagen_widget = Image(buffer_imagen)
         self.mount(imagen_widget)
 
-    def _generar_imagen_grafico(self, data, title, etiquetas):
+    def __generate_imagen(self, data, title, etiquetas):
         fig, ax = mpl_plt.subplots(figsize=(6, 3), facecolor="black")
         ax.set_facecolor("black")
 
